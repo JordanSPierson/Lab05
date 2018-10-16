@@ -15,7 +15,8 @@ using std::vector;
 //the Lab7MyStack.h file
 #include "Lab5MyStack.h"
 
-//[2]
+//[2] Function definitions for stringReversal1 which stores the string (argument) into a STL stack,
+//then reverses it and takes the elements out of the stack to store in a string which is then returned.
 string stringReversal1(string input)
 {
 	stack<char> stack1;
@@ -32,7 +33,8 @@ string stringReversal1(string input)
 	return rString;
 }
 
-//[3]
+//[3] Function definitions for stringReversal2 which stores the string (argument) into a vector,
+//then reverses it and takes the elements out of the vector to store in a string which is then returned.
 string stringReversal2(string input)
 {
 	vector<char> vec1;
@@ -49,7 +51,8 @@ string stringReversal2(string input)
 	return rString;
 }
 
-//[4]
+//[4] Function definitions for stringReversal3 which stores the string (argument) into a list,
+//then reverses it and takes the elements out of the list to store in a string which is then returned.
 string stringReversal3(string input)
 {
 	list<char> list1;
@@ -66,7 +69,7 @@ string stringReversal3(string input)
 	return rString;
 }
 
-//[5]
+//[5] Class definitions for a stack using first a vector (commented out) thena  list (uncommented)
 class Stack
 { 
 public:
@@ -93,7 +96,8 @@ private:
 	//vector< char > store; 
 	 list <char> data;
 };
-
+//[5] Function definitions for stringReversal4 which stores the string (argument) into a class stack,
+//then reverses it and takes the elements out of the stack to store in a string which is then returned.
 string stringReversal4(string input)
 {
 	Stack stack1;
